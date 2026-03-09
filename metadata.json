@@ -1,0 +1,5 @@
+{
+  "name": "Siaubo kambarys 666",
+  "description": "Tamsaus, įtempto ir paslaptingo dizaino svetainė siaubo kambariui Panevėžyje.",
+  "requestFramePermissions": ["geolocation"]
+}
