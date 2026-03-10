@@ -229,7 +229,7 @@ export default function App() {
           </div>
           
           <div className="hidden md:flex gap-8 items-center">
-            {['Apie', 'Istorija', 'Rezervacija', 'Kontaktai'].map((item) => (
+            {['Apie', 'Istorija', 'Kontaktai'].map((item) => (
               <button 
                 key={item} 
                 onClick={() => scrollTo(item.toLowerCase())}
@@ -258,7 +258,7 @@ export default function App() {
             exit={{ opacity: 0, x: '100%' }}
             className="fixed inset-0 z-40 bg-black flex flex-col items-center justify-center gap-8"
           >
-            {['Apie', 'Istorija', 'Rezervacija', 'Kontaktai'].map((item) => (
+            {['Apie', 'Istorija', 'Kontaktai'].map((item) => (
               <button 
                 key={item} 
                 onClick={() => scrollTo(item.toLowerCase())}
@@ -267,6 +267,9 @@ export default function App() {
                 {item}
               </button>
             ))}
+            <Button variant="primary" className="mt-4" onClick={() => scrollTo('rezervacija')}>
+              Rezervuoti
+            </Button>
           </motion.div>
         )}
       </AnimatePresence>
